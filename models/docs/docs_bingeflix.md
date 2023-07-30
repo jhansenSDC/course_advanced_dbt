@@ -12,6 +12,10 @@ The unique identifier of the Bingeflix user.
 The unique identifier of the subscription plan.
 {% enddocs %}
 
+{% docs bingeflix_subscription_id %}
+The unique identifier for the subscription.
+{% enddocs %}
+
 ## Users
 This section contains documentation from the Bingeflix Users table.
 
@@ -66,10 +70,6 @@ When the subscription started.
 When the subscription ends. This value is NULL if the subscription is active.
 {% enddocs %}
 
-{% docs bingeflix_subscription_subscription_id %}
-The unique identifier for the subscription.
-{% enddocs %}
-
 ## Subscription Plans
 This section contains documentation from the Bingeflix Subscription Plans table.
 
@@ -102,6 +102,13 @@ The name of the event.
 
 {% docs bingeflix_events_event_id %}
 The unique identifier of the event.
+{% enddocs %}
+
+## fct_mrr
+This section contains documentation for fct_mrr table.
+
+{% docs fct_mrr_ends_at %}
+When the subscription ended. This value is NULL if the subscription has not had auto-renew turned off.
 {% enddocs %}
 
 ## Template for docs block in yml files '{{ doc("_field_") }}'
