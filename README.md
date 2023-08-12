@@ -115,6 +115,6 @@ Awesome! You are now ready to start the course! 🚀🚀🚀
 #### Models
 - The primary key column must have not_null and unique schema tests.
 - All boolean columns must have an accepted_values schema test. The accepted values are true and false.
-- Columns that contain category values must have an accepted_values schema test.
+- Columns that contain category values must have an accepted_values schema test unless no transformations are performed on the column within the model.
 - Columns that should never be null must have a not_null schema test if any transformations or joins are performed in the model.
 - Where possible, use schema tests from the dbt_utils or dbt_expectations packages to perform extra verification.
