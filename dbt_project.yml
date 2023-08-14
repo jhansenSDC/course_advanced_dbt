@@ -29,3 +29,24 @@ seeds:
   dbt_project_evaluator:
     dbt_project_evaluator_exceptions:
       +enabled: false
+
+  course_advanced_dbt:
+    seeds:
+      unit_testing:
+        +schema: unit_testing
+        +tags: unit_testing
+        unit_test_expected_output_mrr:
+          +column_types:
+            surrogate_key: VARCHAR()
+            date_month: DATE
+            user_id: NUMBER
+            subscription_id: NUMBER
+            starts_at: DATE
+            ends_at: DATE
+            plan_name: VARCHAR()
+            mrr_amount: FLOAT
+            mrr_change: FLOAT
+            retained_mrr_amount: FLOAT
+            previous_month_mrr_amount: FLOAT
+            change_category: VARCHAR()
+            month_retained_number: NUMBER
